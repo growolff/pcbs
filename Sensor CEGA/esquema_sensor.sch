@@ -746,12 +746,6 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="+3V3" urn="urn:adsk.eagle:symbol:26950/1" library_version="1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="+5V" urn="urn:adsk.eagle:symbol:26929/1" library_version="1">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -766,19 +760,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="+3V3" urn="urn:adsk.eagle:component:26981/1" prefix="+3V3" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="+3V3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="+5V" urn="urn:adsk.eagle:component:26963/1" prefix="P+" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -5062,12 +5043,10 @@ Source: DCJ0202.pdf</description>
 <parts>
 <part name="TEMP_HUMEDAD" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X3" device=""/>
 <part name="PARTICULAS" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X5" device="" package3d_urn="urn:adsk.eagle:package:22469/2"/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="RTC" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X6" device="B"/>
 <part name="MICRO-SD" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X6" device="B"/>
-<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -5078,10 +5057,6 @@ Source: DCJ0202.pdf</description>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LM1117T" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X3" device=""/>
-<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="U$1" library="fablab_uchile" deviceset="PRO_MINI_CEGA" device=""/>
 <part name="J1" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="DCJ0202" device="" package3d_urn="urn:adsk.eagle:package:7491/1"/>
 </parts>
@@ -5098,9 +5073,6 @@ Source: DCJ0202.pdf</description>
 <attribute name="NAME" x="34.29" y="14.605" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="34.29" y="30.48" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="+3V1" gate="G$1" x="63.5" y="5.08" smashed="yes">
-<attribute name="VALUE" x="60.96" y="0" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="P+1" gate="1" x="106.68" y="66.04" smashed="yes">
 <attribute name="VALUE" x="104.14" y="60.96" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -5114,9 +5086,6 @@ Source: DCJ0202.pdf</description>
 <instance part="MICRO-SD" gate="A" x="144.78" y="35.56" smashed="yes">
 <attribute name="NAME" x="138.43" y="46.355" size="1.778" layer="95"/>
 <attribute name="VALUE" x="138.43" y="25.4" size="1.778" layer="96"/>
-</instance>
-<instance part="GND1" gate="1" x="43.18" y="66.04" smashed="yes">
-<attribute name="VALUE" x="40.64" y="63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+2" gate="1" x="38.1" y="53.34" smashed="yes">
 <attribute name="VALUE" x="35.56" y="48.26" size="1.778" layer="96" rot="R90"/>
@@ -5150,19 +5119,6 @@ Source: DCJ0202.pdf</description>
 <instance part="P+5" gate="1" x="134.62" y="22.86" smashed="yes" rot="R180">
 <attribute name="VALUE" x="137.16" y="27.94" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="LM1117T" gate="A" x="43.18" y="111.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="49.53" y="106.045" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="49.53" y="119.38" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="P+6" gate="1" x="53.34" y="121.92" smashed="yes">
-<attribute name="VALUE" x="50.8" y="116.84" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="+3V3" gate="G$1" x="58.42" y="114.3" smashed="yes">
-<attribute name="VALUE" x="55.88" y="109.22" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND7" gate="1" x="53.34" y="99.06" smashed="yes">
-<attribute name="VALUE" x="50.8" y="96.52" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="U$1" gate="G$1" x="78.74" y="48.26" smashed="yes">
 <attribute name="NAME" x="71.12" y="69.342" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="71.12" y="27.686" size="1.778" layer="96" font="vector" align="top-left"/>
@@ -5175,24 +5131,11 @@ Source: DCJ0202.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="N$3" class="0">
-<segment>
-<wire x1="20.32" y1="55.88" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="TEMP_HUMEDAD" gate="A" pin="2"/>
 <wire x1="30.48" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="*5"/>
-</segment>
-</net>
-<net name="+3V3" class="0">
-<segment>
-<pinref part="LM1117T" gate="A" pin="2"/>
-<wire x1="45.72" y1="111.76" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="GNDA" class="0">
@@ -5234,12 +5177,6 @@ Source: DCJ0202.pdf</description>
 <wire x1="63.5" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LM1117T" gate="A" pin="1"/>
-<wire x1="45.72" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="109.22" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GNDA"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="101.6" y1="96.52" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -5273,12 +5210,6 @@ Source: DCJ0202.pdf</description>
 <pinref part="P+5" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="LM1117T" gate="A" pin="3"/>
-<wire x1="45.72" y1="114.3" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="114.3" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="91.44" y1="58.42" x2="106.68" y2="58.42" width="0.1524" layer="91"/>
@@ -5288,12 +5219,6 @@ Source: DCJ0202.pdf</description>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="101.6" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
 <label x="109.22" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="*3"/>
-<wire x1="58.42" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -5307,21 +5232,11 @@ Source: DCJ0202.pdf</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="33.02" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="33.02" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="22.86" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
-<junction x="45.72" y="33.02"/>
 <pinref part="U$1" gate="G$1" pin="TXO"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="20.32" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="PARTICULAS" gate="A" pin="2"/>
-<wire x1="30.48" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -5386,6 +5301,17 @@ Source: DCJ0202.pdf</description>
 <pinref part="RTC" gate="A" pin="3"/>
 <wire x1="99.06" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
 <label x="99.06" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
+<junction x="45.72" y="33.02"/>
+<wire x1="43.18" y1="33.02" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="PARTICULAS" gate="A" pin="2"/>
+<wire x1="43.18" y1="20.32" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

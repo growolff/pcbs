@@ -5034,7 +5034,7 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dedo">
+<library name="robot-hand">
 <packages>
 <package name="ESP32_MINI_KIT">
 <pad name="P1" x="-13.97" y="11.43" drill="0.6" shape="long"/>
@@ -5058,10 +5058,20 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <pad name="P19" x="13.97" y="8.89" drill="0.6" shape="long"/>
 <pad name="P20" x="13.97" y="11.43" drill="0.6" shape="long"/>
 <text x="-15.078" y="12.749665625" size="1.27" layer="25">&gt;NAME</text>
-<wire x1="-16.51" y1="19.05" x2="-16.51" y2="-19.05" width="0.127" layer="21"/>
-<wire x1="-16.51" y1="-19.05" x2="16.51" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="19.05" x2="-16.51" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-19.05" x2="-7.62" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-19.05" x2="16.51" y2="-19.05" width="0.127" layer="21"/>
 <wire x1="16.51" y1="-19.05" x2="16.51" y2="19.05" width="0.127" layer="21"/>
 <wire x1="16.51" y1="19.05" x2="-16.51" y2="19.05" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-19.05" x2="-5.08" y2="-16.51" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-16.51" x2="5.08" y2="-16.51" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-16.51" x2="7.62" y2="-19.05" width="0.1524" layer="21"/>
+<wire x1="-16.51" y1="-12.7" x2="-12.7" y2="-12.7" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="-19.05" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-12.7" x2="-3.81" y2="-19.05" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-19.05" x2="3.81" y2="-19.05" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-19.05" x2="3.81" y2="-12.7" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-12.7" x2="-3.81" y2="-12.7" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -5147,10 +5157,6 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <parts>
 <part name="QTR8A" library="adafruit" deviceset="PINHD-1X8" device="BIG"/>
 <part name="S1" library="SparkFun-Retired" deviceset="TAC_SWITCH" device="PTH"/>
-<part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1"/>
-<part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1"/>
-<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="SG1" library="buzzer" library_urn="urn:adsk.eagle:library:113" deviceset="F/QMBIII" device="" package3d_urn="urn:adsk.eagle:package:5267/1"/>
 <part name="RIGHTQTR1A" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="LEFTQTR1A" library="adafruit" deviceset="PINHD-1X3" device=""/>
@@ -5166,7 +5172,7 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/1"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="ESP32" library="dedo" deviceset="ESP32_MINI_KIT" device=""/>
+<part name="ESP32" library="robot-hand" deviceset="ESP32_MINI_KIT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5180,26 +5186,6 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <instance part="S1" gate="S" x="43.18" y="2.54" smashed="yes">
 <attribute name="NAME" x="40.64" y="8.89" size="1.778" layer="95"/>
 <attribute name="VALUE" x="40.64" y="-3.81" size="1.778" layer="96"/>
-</instance>
-<instance part="X1" gate="-1" x="15.24" y="20.32" smashed="yes">
-<attribute name="NAME" x="17.78" y="19.558" size="1.524" layer="95"/>
-<attribute name="VALUE" x="14.478" y="21.717" size="1.778" layer="96"/>
-</instance>
-<instance part="X1" gate="-2" x="15.24" y="17.78" smashed="yes">
-<attribute name="NAME" x="17.78" y="17.018" size="1.524" layer="95"/>
-</instance>
-<instance part="X2" gate="-1" x="12.7" y="10.16" smashed="yes">
-<attribute name="NAME" x="15.24" y="9.398" size="1.524" layer="95"/>
-<attribute name="VALUE" x="11.938" y="11.557" size="1.778" layer="96"/>
-</instance>
-<instance part="X2" gate="-2" x="12.7" y="7.62" smashed="yes">
-<attribute name="NAME" x="15.24" y="6.858" size="1.524" layer="95"/>
-</instance>
-<instance part="P+1" gate="1" x="0" y="20.32" smashed="yes" rot="R180">
-<attribute name="VALUE" x="2.54" y="25.4" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="P+2" gate="VCC" x="-2.54" y="22.86" smashed="yes" rot="R180">
-<attribute name="VALUE" x="0" y="25.4" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="SG1" gate="G$1" x="-20.32" y="40.64" smashed="yes">
 <attribute name="NAME" x="-22.86" y="46.99" size="1.778" layer="95"/>
@@ -5295,43 +5281,11 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <wire x1="73.66" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="X2" gate="-2" pin="S"/>
-<wire x1="5.08" y1="30.48" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<wire x1="7.62" y1="30.48" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-1" pin="S"/>
-<wire x1="7.62" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<wire x1="10.16" y1="30.48" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-2" pin="S"/>
-<wire x1="10.16" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="X1" gate="-1" pin="S"/>
-<wire x1="12.7" y1="30.48" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
-<wire x1="2.54" y1="30.48" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="35.56" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="35.56" x2="-22.86" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SG1" gate="G$1" pin="+"/>
 <wire x1="-22.86" y1="35.56" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<junction x="-22.86" y="35.56"/>
 </segment>
 <segment>
 <pinref part="LEFTQTR1A" gate="A" pin="3"/>
@@ -5357,10 +5311,6 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 </segment>
 </net>
 <net name="+5V" class="0">
-<segment>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="0" y1="22.86" x2="0" y2="30.48" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="LEFTQTR1A" gate="A" pin="1"/>
 <wire x1="93.98" y1="15.24" x2="88.9" y2="15.24" width="0.1524" layer="91"/>
@@ -5393,26 +5343,23 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="-2.54" y1="25.4" x2="-2.54" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="X3" gate="-2" pin="S"/>
 <wire x1="-7.62" y1="10.16" x2="-5.08" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="10.16" x2="-5.08" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="BOTON" class="0">
 <segment>
 <pinref part="S1" gate="S" pin="1"/>
 <pinref part="S1" gate="S" pin="2"/>
 <wire x1="33.02" y1="0" x2="38.1" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="0" x2="38.1" y2="0" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="0" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <junction x="33.02" y="0"/>
+<wire x1="33.02" y1="0" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="7.62" x2="25.4" y2="7.62" width="0.1524" layer="91"/>
+<label x="25.4" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -5444,6 +5391,11 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <wire x1="96.52" y1="66.04" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="QTR8A" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<wire x1="33.02" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
