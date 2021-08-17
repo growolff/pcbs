@@ -1396,16 +1396,16 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="5.08" y="-0.635" size="1.016" layer="21" rot="R90" align="center">RESET</text>
 </package>
 <package name="HX711">
-<pad name="A0" x="-12.5" y="6.35" drill="0.8" shape="long"/>
-<pad name="A1" x="-12.5" y="3.81" drill="0.8" shape="long"/>
-<pad name="A2" x="-12.5" y="1.27" drill="0.8" shape="long"/>
-<pad name="A3" x="-12.5" y="-1.27" drill="0.8" shape="long"/>
-<pad name="A4" x="-12.5" y="-3.81" drill="0.8" shape="long"/>
-<pad name="A5" x="-12.5" y="-6.35" drill="0.8" shape="long"/>
-<pad name="D0" x="12.5" y="3.81" drill="0.8" shape="long"/>
-<pad name="D1" x="12.5" y="1.27" drill="0.8" shape="long"/>
-<pad name="D2" x="12.5" y="-1.27" drill="0.8" shape="long"/>
-<pad name="D3" x="12.5" y="-3.81" drill="0.8" shape="long"/>
+<pad name="A0" x="-12.5" y="6.35" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="A1" x="-12.5" y="3.81" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="A2" x="-12.5" y="1.27" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="A3" x="-12.5" y="-1.27" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="A4" x="-12.5" y="-3.81" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="A5" x="-12.5" y="-6.35" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="D0" x="12.5" y="3.81" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="D1" x="12.5" y="1.27" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="D2" x="12.5" y="-1.27" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="D3" x="12.5" y="-3.81" drill="0.8" diameter="1.778" shape="long"/>
 <wire x1="-17.5" y1="11.35" x2="-17.5" y2="-11.34" width="0.1524" layer="21"/>
 <wire x1="-17.5" y1="-11.34" x2="17.5" y2="-11.34" width="0.1524" layer="21"/>
 <wire x1="17.5" y1="-11.34" x2="17.5" y2="11.35" width="0.1524" layer="21"/>
@@ -2146,7 +2146,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <rectangle x1="37.846" y1="2.286" x2="38.354" y2="2.794" layer="51"/>
 <rectangle x1="35.306" y1="2.286" x2="35.814" y2="2.794" layer="51"/>
 <rectangle x1="32.766" y1="2.286" x2="33.274" y2="2.794" layer="51"/>
-<hole x="90.17" y="50.8" drill="3.2"/>
 </package>
 <package name="ARDUINO_MEGA-PRO-3.3V">
 <description>Arduino Mega Pro footprint</description>
@@ -3629,6 +3628,100 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <hole x="78.74" y="50.8" drill="3.2"/>
 <hole x="85.09" y="2.54" drill="3.2"/>
 </package>
+<package name="LILYGO-T-CALL-V1.4">
+<pad name="VN" x="-11.43" y="13.97" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="34" x="-11.43" y="11.43" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="35" x="-11.43" y="8.89" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="32" x="-11.43" y="6.35" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="33" x="-11.43" y="3.81" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VP" x="-11.43" y="16.51" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="EN" x="-11.43" y="19.05" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="3.3V" x="-11.43" y="21.59" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="25" x="-11.43" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="26" x="-11.43" y="-1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="27" x="-11.43" y="-3.81" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="14" x="-11.43" y="-6.35" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="12" x="-11.43" y="-8.89" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="GND" x="-11.43" y="-11.43" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="13" x="-11.43" y="-13.97" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="SD2" x="-11.43" y="-16.51" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="SD3" x="-11.43" y="-19.05" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="CMD" x="-11.43" y="-21.59" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="5V-OUT" x="-11.43" y="-24.13" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="SPK+" x="-11.43" y="-26.67" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="SPK-" x="-11.43" y="-29.21" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="TX" x="11.43" y="13.97" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="RX" x="11.43" y="11.43" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="21" x="11.43" y="8.89" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="GND2" x="11.43" y="6.35" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="19" x="11.43" y="3.81" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="22" x="11.43" y="16.51" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="23" x="11.43" y="19.05" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="GND1" x="11.43" y="21.59" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="18" x="11.43" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="5" x="11.43" y="-1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="NC" x="11.43" y="-3.81" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="NC1" x="11.43" y="-6.35" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="4" x="11.43" y="-8.89" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="0" x="11.43" y="-11.43" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="2" x="11.43" y="-13.97" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="15" x="11.43" y="-16.51" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="SD1" x="11.43" y="-19.05" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="SD0" x="11.43" y="-21.59" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="CLK" x="11.43" y="-24.13" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="MIC-" x="11.43" y="-26.67" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="MIC+" x="11.43" y="-29.21" drill="0.8" diameter="1.4224" shape="octagon"/>
+<wire x1="-13.97" y1="27.94" x2="13.97" y2="27.94" width="0.127" layer="21"/>
+<wire x1="13.97" y1="27.94" x2="13.97" y2="-39.37" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-39.37" x2="-13.97" y2="-39.37" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-39.37" x2="-13.97" y2="27.94" width="0.127" layer="21"/>
+<text x="-10.16" y="21.59" size="1.27" layer="21">3.3v</text>
+<text x="-10.16" y="19.05" size="1.27" layer="21">EN</text>
+<text x="-10.16" y="16.51" size="1.27" layer="21">VP</text>
+<text x="-10.16" y="13.97" size="1.27" layer="21">VN</text>
+<text x="-10.16" y="11.43" size="1.27" layer="21">34</text>
+<text x="-10.16" y="8.89" size="1.27" layer="21">35</text>
+<text x="-10.16" y="6.35" size="1.27" layer="21">32</text>
+<text x="-10.16" y="3.81" size="1.27" layer="21">33</text>
+<text x="-10.16" y="1.27" size="1.27" layer="21">25</text>
+<text x="-10.16" y="-1.27" size="1.27" layer="21">26</text>
+<text x="-10.16" y="-3.81" size="1.27" layer="21">27</text>
+<text x="-10.16" y="-6.35" size="1.27" layer="21">14</text>
+<text x="-10.16" y="-8.89" size="1.27" layer="21">12</text>
+<text x="-10.16" y="-11.43" size="1.27" layer="21">GND</text>
+<text x="-10.16" y="-13.97" size="1.27" layer="21">13</text>
+<text x="-10.16" y="-16.51" size="1.27" layer="21">SD2</text>
+<text x="-10.16" y="-19.05" size="1.27" layer="21">SD3</text>
+<text x="-10.16" y="-21.59" size="1.27" layer="21">CMD</text>
+<text x="-10.16" y="-24.13" size="1.27" layer="21">5V-OUT</text>
+<text x="-10.16" y="-26.67" size="1.27" layer="21">SPK+</text>
+<text x="-10.16" y="-29.21" size="1.27" layer="21">SPK-</text>
+<text x="10.16" y="22.86" size="1.27" layer="21" rot="R180">GND</text>
+<text x="10.16" y="20.32" size="1.27" layer="21" rot="R180">23</text>
+<text x="10.16" y="17.78" size="1.27" layer="21" rot="R180">22</text>
+<text x="10.16" y="15.24" size="1.27" layer="21" rot="R180">TX</text>
+<text x="10.16" y="12.7" size="1.27" layer="21" rot="R180">RX</text>
+<text x="10.16" y="10.16" size="1.27" layer="21" rot="R180">21</text>
+<text x="10.16" y="7.62" size="1.27" layer="21" rot="R180">GND</text>
+<text x="10.16" y="5.08" size="1.27" layer="21" rot="R180">19</text>
+<text x="10.16" y="2.54" size="1.27" layer="21" rot="R180">18</text>
+<text x="10.16" y="0" size="1.27" layer="21" rot="R180">5</text>
+<text x="10.16" y="-2.54" size="1.27" layer="21" rot="R180">NC</text>
+<text x="10.16" y="-5.08" size="1.27" layer="21" rot="R180">NC</text>
+<text x="10.16" y="-7.62" size="1.27" layer="21" rot="R180">4</text>
+<text x="10.16" y="-10.16" size="1.27" layer="21" rot="R180">0</text>
+<text x="10.16" y="-12.7" size="1.27" layer="21" rot="R180">2</text>
+<text x="10.16" y="-15.24" size="1.27" layer="21" rot="R180">15</text>
+<text x="10.16" y="-17.78" size="1.27" layer="21" rot="R180">SD1</text>
+<text x="10.16" y="-20.32" size="1.27" layer="21" rot="R180">SD0</text>
+<text x="10.16" y="-22.86" size="1.27" layer="21" rot="R180">CLK</text>
+<text x="10.16" y="-25.4" size="1.27" layer="21" rot="R180">MIC-</text>
+<text x="10.16" y="-27.94" size="1.27" layer="21" rot="R180">MIC+</text>
+<hole x="-11.43" y="25.4" drill="3"/>
+<hole x="11.43" y="25.4" drill="3"/>
+<hole x="-11.43" y="-36.83" drill="3"/>
+<hole x="11.43" y="-36.83" drill="3"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="LED-RGB-THRU" urn="urn:adsk.eagle:package:39368/1" type="box">
@@ -4147,6 +4240,55 @@ LED Pirahana</description>
 <pin name="19(RX1)" x="20.32" y="35.56" length="middle" rot="R180"/>
 <pin name="VIN" x="-20.32" y="50.8" length="middle"/>
 <pin name="0(RX0)" x="-20.32" y="-7.62" length="middle"/>
+</symbol>
+<symbol name="LILYGO-T-CALL-V1.4">
+<wire x1="-15.24" y1="27.94" x2="15.24" y2="27.94" width="0.254" layer="94"/>
+<wire x1="15.24" y1="27.94" x2="15.24" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-27.94" x2="-15.24" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-27.94" x2="-15.24" y2="27.94" width="0.254" layer="94"/>
+<pin name="3.3V" x="-20.32" y="25.4" length="middle"/>
+<pin name="EN" x="-20.32" y="22.86" length="middle"/>
+<pin name="VP" x="-20.32" y="20.32" length="middle"/>
+<pin name="VN" x="-20.32" y="17.78" length="middle"/>
+<pin name="34" x="-20.32" y="15.24" length="middle"/>
+<pin name="35" x="-20.32" y="12.7" length="middle"/>
+<pin name="32" x="-20.32" y="10.16" length="middle"/>
+<pin name="33" x="-20.32" y="7.62" length="middle"/>
+<pin name="25" x="-20.32" y="5.08" length="middle"/>
+<pin name="26" x="-20.32" y="2.54" length="middle"/>
+<pin name="27" x="-20.32" y="0" length="middle"/>
+<pin name="14" x="-20.32" y="-2.54" length="middle"/>
+<pin name="12" x="-20.32" y="-5.08" length="middle"/>
+<pin name="GND" x="-20.32" y="-7.62" length="middle"/>
+<pin name="13" x="-20.32" y="-10.16" length="middle"/>
+<pin name="SD2" x="-20.32" y="-12.7" length="middle"/>
+<pin name="SD3" x="-20.32" y="-15.24" length="middle"/>
+<pin name="CMD" x="-20.32" y="-17.78" length="middle"/>
+<pin name="5V-OUT" x="-20.32" y="-20.32" length="middle"/>
+<pin name="SPK+" x="-20.32" y="-22.86" length="middle"/>
+<pin name="SPK-" x="-20.32" y="-25.4" length="middle"/>
+<pin name="GND1" x="20.32" y="25.4" length="middle" rot="R180"/>
+<pin name="23" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="22" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="TX" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="RX" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="21" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="GND2" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="19" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="18" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="5" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="NC" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="NC1" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="4" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="0" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="2" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="15" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="SD1" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="SD0" x="20.32" y="-17.78" length="middle" rot="R180"/>
+<pin name="CLK" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="MIC-" x="20.32" y="-22.86" length="middle" rot="R180"/>
+<pin name="MIC+" x="20.32" y="-25.4" length="middle" rot="R180"/>
+<text x="-10.16" y="22.86" size="1.778" layer="94">Lilygo-T-CALL v1.4</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4927,6 +5069,62 @@ LED Pirahana</description>
 <connect gate="G$1" pin="GND@4" pad="GND@4"/>
 <connect gate="G$1" pin="RESET" pad="RESET"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LILYGO-T-CALL-V1.4">
+<gates>
+<gate name="LILYGO" symbol="LILYGO-T-CALL-V1.4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LILYGO-T-CALL-V1.4">
+<connects>
+<connect gate="LILYGO" pin="0" pad="0"/>
+<connect gate="LILYGO" pin="12" pad="12"/>
+<connect gate="LILYGO" pin="13" pad="13"/>
+<connect gate="LILYGO" pin="14" pad="14"/>
+<connect gate="LILYGO" pin="15" pad="15"/>
+<connect gate="LILYGO" pin="18" pad="18"/>
+<connect gate="LILYGO" pin="19" pad="19"/>
+<connect gate="LILYGO" pin="2" pad="2"/>
+<connect gate="LILYGO" pin="21" pad="21"/>
+<connect gate="LILYGO" pin="22" pad="22"/>
+<connect gate="LILYGO" pin="23" pad="23"/>
+<connect gate="LILYGO" pin="25" pad="25"/>
+<connect gate="LILYGO" pin="26" pad="26"/>
+<connect gate="LILYGO" pin="27" pad="27"/>
+<connect gate="LILYGO" pin="3.3V" pad="3.3V"/>
+<connect gate="LILYGO" pin="32" pad="32"/>
+<connect gate="LILYGO" pin="33" pad="33"/>
+<connect gate="LILYGO" pin="34" pad="34"/>
+<connect gate="LILYGO" pin="35" pad="35"/>
+<connect gate="LILYGO" pin="4" pad="4"/>
+<connect gate="LILYGO" pin="5" pad="5"/>
+<connect gate="LILYGO" pin="5V-OUT" pad="5V-OUT"/>
+<connect gate="LILYGO" pin="CLK" pad="CLK"/>
+<connect gate="LILYGO" pin="CMD" pad="CMD"/>
+<connect gate="LILYGO" pin="EN" pad="EN"/>
+<connect gate="LILYGO" pin="GND" pad="GND"/>
+<connect gate="LILYGO" pin="GND1" pad="GND1"/>
+<connect gate="LILYGO" pin="GND2" pad="GND2"/>
+<connect gate="LILYGO" pin="MIC+" pad="MIC+"/>
+<connect gate="LILYGO" pin="MIC-" pad="MIC-"/>
+<connect gate="LILYGO" pin="NC" pad="NC"/>
+<connect gate="LILYGO" pin="NC1" pad="NC1"/>
+<connect gate="LILYGO" pin="RX" pad="RX"/>
+<connect gate="LILYGO" pin="SD0" pad="SD0"/>
+<connect gate="LILYGO" pin="SD1" pad="SD1"/>
+<connect gate="LILYGO" pin="SD2" pad="SD2"/>
+<connect gate="LILYGO" pin="SD3" pad="SD3"/>
+<connect gate="LILYGO" pin="SPK+" pad="SPK+"/>
+<connect gate="LILYGO" pin="SPK-" pad="SPK-"/>
+<connect gate="LILYGO" pin="TX" pad="TX"/>
+<connect gate="LILYGO" pin="VN" pad="VN"/>
+<connect gate="LILYGO" pin="VP" pad="VP"/>
 </connects>
 <technologies>
 <technology name=""/>
